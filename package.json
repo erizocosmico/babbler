@@ -2,7 +2,10 @@
   "name": "babbler",
   "version": "0.1.0",
   "description": "Wrapper for the Google Chrome speech synthesis and web speech recognition APIs.",
-  "main": "src/index.js",
+  "main": "babbler.js",
+  "scripts": {
+    "start": "./node_modules/babel/bin/babel.js ./src/index.js -o babbler.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mvader/babbler"
@@ -22,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/mvader/babbler/issues"
   },
-  "homepage": "https://github.com/mvader/babbler"
+  "homepage": "https://github.com/mvader/babbler",
+  "devDependencies": {
+    "babel": "^5.8.23"
+  }
 }
